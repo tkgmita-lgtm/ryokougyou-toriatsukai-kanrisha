@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>旅行業務取扱管理者 合格アプリ</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <header>
@@ -15,8 +15,8 @@
     <div id="home-screen" class="screen active">
       <h2>学習メニュー</h2>
       <button class="menu-btn" onclick="showScreen('textbook-screen')">📖 参考書</button>
-      <button class="menu-btn" onclick="showScreen('practice-screen'); startQuiz('practice')">⚠️ 練習問題 (引っかけ)</button>
-      <button class="menu-btn" onclick="showScreen('past-screen'); startQuiz('past')">📚 過去問題 (一問一答〇×)</button>
+      <button class="menu-btn" onclick="showScreen('quiz-screen'); startQuiz('practice')">⚠️ 練習問題 (引っかけ)</button>
+      <button class="menu-btn" onclick="showScreen('quiz-screen'); startQuiz('past')">📚 過去問題 (一問一答〇×)</button>
     </div>
 
     <div id="textbook-screen" class="screen">
@@ -44,6 +44,6 @@
     </div>
   </main>
 
-  <script src="script.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>
