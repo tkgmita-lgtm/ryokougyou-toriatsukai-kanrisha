@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', sans-serif;
+  background-color: #ffffff;
+  color: #333333;
+}
+header {
+  background-color: #f8f9fa;
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+header h1 {
+  margin: 0;
+  font-size: 20px;
+  color: #0056b3;
+}
+main {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.screen {
+  display: none;
+}
+.screen.active {
+  display: block;
+}
+h2 {
+  font-size: 18px;
+  border-bottom: 2px solid #0056b3;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+.menu-btn {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  background-color: #ffffff;
+  border: 2px solid #0056b3;
+  color: #0056b3;
+  border-radius: 8px;
+  font-weight: bold;
+}
+.menu-btn:active {
+  background-color: #0056b3;
+  color: #ffffff;
+}
+.unit-box {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+.unit-box h3 { margin-top: 0; font-size: 16px; color: #d9534f; }
+.unit-box p { font-size: 14px; line-height: 1.6; white-space: pre-wrap; }
+
+/* クイズ関連 */
+.question-container {
+  min-height: 100px;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.answer-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+.maru-btn, .batsu-btn {
+  flex: 1;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  color: white;
+}
+.maru-btn { background-color: #5cb85c; }
+.batsu-btn { background-color: #d9534f; }
+#result-container {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f1f1f1;
+}
+#result-text { font-weight: bold; font-size: 18px; margin-top: 0; }
+#explanation-text { font-size: 14px; line-height: 1.5; }
+.next-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.back-btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.hidden { display: none !important; }
