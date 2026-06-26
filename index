@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>旅行業務取扱管理者 合格アプリ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 id="app-title" onclick="goHome()">旅行業 合格アプリ</h1>
+  </header>
+
+  <main>
+    <div id="home-screen" class="screen active">
+      <h2>学習メニュー</h2>
+      <button class="menu-btn" onclick="showScreen('textbook-screen')">📖 参考書</button>
+      <button class="menu-btn" onclick="showScreen('practice-screen'); startQuiz('practice')">⚠️ 練習問題 (引っかけ)</button>
+      <button class="menu-btn" onclick="showScreen('past-screen'); startQuiz('past')">📚 過去問題 (一問一答〇×)</button>
+    </div>
+
+    <div id="textbook-screen" class="screen">
+      <h2>参考書</h2>
+      <div id="textbook-content"></div>
+      <button class="back-btn" onclick="goHome()">トップに戻る</button>
+    </div>
+
+    <div id="quiz-screen" class="screen">
+      <h2 id="quiz-title">問題</h2>
+      <div class="question-container">
+        <p id="question-text">問題文がここに入ります</p>
+      </div>
+      <div class="answer-buttons">
+        <button class="maru-btn" onclick="answer(true)">〇</button>
+        <button class="batsu-btn" onclick="answer(false)">×</button>
+      </div>
+      <div id="result-container" class="hidden">
+        <p id="result-text"></p>
+        <p id="explanation-text"></p>
+        <button class="next-btn" onclick="nextQuestion()">次の問題へ</button>
+      </div>
+      <br>
+      <button class="back-btn" onclick="goHome()">トップに戻る</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
